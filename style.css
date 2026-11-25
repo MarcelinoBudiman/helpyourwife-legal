@@ -1,0 +1,46 @@
+/* Matches the video brand: obsidian base, editorial white, one warm gold accent */
+:root {
+  --obsidian: #08080B;
+  --white: #F7F7F5;
+  --muted: #B8B8C0;
+  --gold: #FFD166;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--obsidian);
+  color: var(--white);
+  font-family: "Helvetica Neue", "Avenir Next", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 1px solid #26262E;
+}
+
+a { color: var(--white); cursor: pointer; }
+a:hover { color: var(--gold); }
+a:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+.brand { font-weight: 700; text-decoration: none; letter-spacing: -0.02em; }
+nav { display: flex; gap: 20px; }
+nav a { text-decoration: none; color: var(--muted); padding: 10px 0; }
+nav a[aria-current="page"] { color: var(--white); border-bottom: 2px solid var(--gold); }
+
+main { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+h1 { font-size: clamp(2rem, 6vw, 3rem); line-height: 1.1; letter-spacing: -0.035em; margin: 0 0 8px; }
+h2 { font-size: 1.15rem; margin: 36px 0 8px; letter-spacing: -0.01em; }
+.meta { color: var(--muted); margin: 0 0 24px; }
+p, li { color: #E4E4E8; }
+code { font-size: 0.92em; color: var(--gold); }
+.avatar { border-radius: 50%; display: block; margin-bottom: 28px; }
